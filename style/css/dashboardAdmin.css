@@ -1,0 +1,162 @@
+@import url('style.css');
+body {
+    height: 100vh;
+}
+footer {
+    position: static;
+    bottom: 0;
+}
+main  section.view-none {
+    display: none;
+}
+main section div:nth-child(2),#weather-alert-active  {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2px 0 2px;
+}
+#weather-alert-active {
+    display: flex;
+    background-color: orangered;
+}
+#weather-alert-active span {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+#weather-alert-active form {
+    width: 100%;
+}
+#weather-alert-active button {
+    height: 50px;
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+main section div:nth-child(2) form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40% 50% 10%;
+    height: 550px;
+    width: 98%;
+}
+main section div:nth-child(2) form p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+main section div:nth-child(2) form div:nth-child(2) {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main section div:nth-child(2) form div:nth-child(2) div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+}
+main section div:nth-child(2) form div:nth-child(2) div input {
+    height: 20px;
+    width: 20px;
+}
+main section form div#form-part-2   {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+main section form div#form-part-2 input  {
+    height: 20px;
+    width: 90%;
+}
+main section form div#form-part-2 input:last-child  {
+    width: 90%;
+    height: 80px;
+}
+main section form button {
+    grid-row: 4/5;
+    background-color: #235787;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+main section div#chart-container{
+    display: none;
+    background-color: red;
+    height: 100%;
+}
+main section div#chart-container img{
+   height: 100px;
+   width: 250px;
+}
+main section.container-type-3 {
+    margin: 20px 2px 0 2px;
+}
+section.container-type-3 h4 {
+    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+section.container-type-3 ul {
+    list-style-type: none;
+}
+section.container-type-3 ul li {
+    height: 30px;
+}
+section #level-title {
+    margin-top: 55px;
+}
+
+main section.container-type-3 p {
+    text-align: center;
+}
+main section.container-type-3 a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    font-size: 1em;
+    font-weight:500;
+    text-decoration: none;
+}
+@media screen and (min-width: 1100px){
+    body {
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main  section {
+        position: relative;
+        top: 100px;
+        height: 700px;
+        width: 100%;
+    }
+    main section.container-type-3 {
+        width: 60%;
+        margin: 0 1% 0 1%;
+        height: 700px;
+
+    }
+    main section form div#form-part-2 {
+        height: 200px;
+    }
+    main section div#select-alert-type {
+        display: flex;
+        align-items: flex-start;
+        height: 150px;
+    }
+    #weather-alert-active img {
+        height: 100px;
+        width: auto;
+    }   
+}
+

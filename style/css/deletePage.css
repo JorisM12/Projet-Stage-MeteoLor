@@ -1,0 +1,29 @@
+@import url('style.css');
+main section:last-child a.button-type-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 350px;
+    height: 50px;
+    width: 70%;
+    left: 17%;
+    margin-top: 5%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;   
+}
+main section:last-child a.button-type-2:nth-child(2),main section:last-child a.button-type-2:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.5);   
+}
+main section p {
+    position: relative;
+    margin: 0;
+    top: 150px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

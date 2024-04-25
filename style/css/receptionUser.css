@@ -1,0 +1,387 @@
+@import url('style.css');
+
+header,main, footer {
+    background-color: #2E72B2;
+}
+header {
+    text-align: center;
+}
+header #logoMobile {
+    height: 90px;
+    width: 90px;
+    margin-top: 2%;
+}
+header h2 {
+    color: white;
+    position: relative;
+}
+
+main #log-out {
+    position: relative;
+    display: block;
+    position: absolute;
+    left: 77%;
+    top: 28%;
+    height: auto;
+    width: auto;
+}
+main #log-out a {
+    background-color: #AFBFCB;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+html {
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+body {
+    min-height: 1000px;
+    margin: 0;
+}
+main #mobile-view-choice {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+}
+main #mobile-view-choice a{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;  
+}
+main #mobile-view-choice a.button-type-2{
+    opacity: 0.2;
+}
+main #mobile-view-choice div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main #mobile-view-choice p{
+    padding: 1%;
+}
+
+main #mobile-view-choice div a{
+    font-weight: bold;
+}
+main section #suggestions {
+    position: absolute;
+    z-index: 1000;
+    background-color: yellow;
+    width: 100%;
+}
+main section div.autocomplete-suggestion {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    height: 35px;
+    background-color: white;
+}
+main section div.autocomplete-suggestion:hover {
+    background-color: #AFBFCB;
+    cursor: pointer;
+}
+main section .leaflet-marker-icon {
+    filter: drop-shadow(7px 7px 7px #0101017b);
+    -webkit-filter: drop-shadow(7px 7px 7px #00000081);
+}
+main section div#mapJS p {
+    margin: 0;
+}
+main section div#mapJS .head-obs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main section div#mapJS .circle-hour {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+main section div#mapJS .circle-hour.green {
+    background-color: rgb(1, 217, 1);
+}
+main section div#mapJS .circle-hour.orange {
+    background-color: orange;
+}
+main section div#mapJS .circle-hour.red {
+    background-color: red;
+}
+
+main section .img-obs-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1100px){
+    header,main,footer {
+        background-color: white;
+    }
+    header #logoMobile {
+        display: none;
+    }
+    header {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 15%;
+    }
+    header .container-logo {
+        position: relative;
+        margin: 0;
+        background-color:white;
+    }
+    main #log-out {
+        left: 77%;
+        top: 18%;
+        z-index: 1000;
+    }
+    main section#mobile-view-choice{
+        display: none;
+    }
+    header h2 {
+        font-size: 1.7em;
+        color: #3D3D3D;
+        top: 5%;
+        left: 2.7%;
+    }
+    main section#desktop-view-choice {
+        position: relative;
+        display: flex;
+        width: 100%;
+        top: 4%;
+    }
+    main section:first-child {
+        position: relative;
+        height: 850px;
+        width: 35%;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    main section:first-child form {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main section:first-child h3 {
+        text-align: center;
+    }
+    main section:last-child {
+        position: relative;
+        height: 800px;
+        width: 100%;
+    }
+    main section#sectionMapJS {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        height: 800px;
+        width: 55%;
+    }
+    main section:last-child div#mapJS {
+        height: 750px;
+        width: 100%;
+        left: -20%;
+    }
+    main section form .input-type-1 {
+        width: 90%;
+        margin-bottom: 4%;
+        background-color: rgb(244, 244, 244);
+    }
+    main section label,.input-type-1 {
+        margin-left: 2%;
+    }
+    main section form .input-type-1:nth-child(2) {
+        height: 100px;
+    }
+    main section form .button-type-1 {
+        position: relative;
+        width: 50%;
+        height: 50px;
+        margin: 0 25% 0 25%;
+        top: 15%;
+    }
+    main section .leaflet-marker-icon {
+        filter: drop-shadow(7px 7px 7px #0101017b);
+        -webkit-filter: drop-shadow(7px 7px 7px #00000081);
+    }
+    main section:last-child a.button-type-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 70%;
+        margin-top: 2%;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;  
+        cursor: pointer; 
+        opacity: 0.3;
+    }
+    main section #delete-obs {
+        position: relative;
+        text-align: center;
+        width: 75%;
+        height: 50px;
+        margin: 5% 12.5% 0 12.5%;
+        bottom: 15px;
+        left: 0;
+        background-color: rgb(249, 93, 93);
+        opacity: 1;
+    }
+    main section div#mapJS .title-card {
+       text-align: center;
+    }
+    main section div#mapJS .img-card {
+        height: 80px;
+        width: auto;
+    }
+    main section div#hours-circles{
+        position: relative;
+        height: 50px;
+        width: 400px;
+        left: 8%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main section div.circle-legend{
+        position: relative;
+        height: 25px;
+        width: 25px;
+        left: 15px;
+        border-radius: 50px;
+        background-color: rgb(1, 217, 1);;
+    }
+    main section div.circle-legend:nth-child(3){
+        background-color: orange;
+    }
+    main section div.circle-legend:nth-child(5){
+        background-color: red;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer a {
+        position: relative;
+        right: 20px;
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 1100px){
+    main section#mobile-view-choice.hidden {
+        display: none;
+    }
+    main section#desktop-view-choice{
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: 80vh;
+        top: 5%;
+    }
+    header h2 {
+        display: none;
+    }
+    body {
+        background-color: #2E72B2;
+    }
+    main section#desktop-view-choice section {
+        width: 100%;
+        height: 80vh;
+        z-index: 200;
+    }
+    main section#desktop-view-choice section h3 {
+       text-align: center;
+    }
+    main section#desktop-view-choice section form input,main section#desktop-view-choice section form select {
+        width: 100%;
+    }
+
+    main section#desktop-view-choice section form button {
+        position: relative;
+        width: 50%;
+        margin: 0 25% 0 25%;
+        top: 50px;
+    }
+    main section #delete-obs,main section #exit  {
+        position: relative;
+        text-align: center;
+        width: 75%;
+        height: 50px;
+        margin: 0 12.5% 0 12.5%;
+        bottom: 15px;
+        left: 0;
+        top: 100px;
+        text-decoration: none;
+        background-color: rgb(252, 102, 102);
+    }
+    main section #exit {
+        background-color: gainsboro;
+        margin-top: 30px;
+    }
+    main .button-type-2:nth-child(2){
+        display: none;
+    }
+    main section#desktop-view-choice div#close-form-mobile{
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        height: 60px;
+        width: 60px;
+        background-image: url('../images/close.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    main section#sectionMapJS {
+        position: relative;
+        width: 100%;
+        z-index: 1500;
+        display: block;
+    }
+    main section:last-child div#mapJS {
+        display: block;
+        width: 100%;
+        height: 700px;
+        top: 20px;
+    }
+
+    main section#desktop-view-choice section {
+        display: none;
+    }
+    main section #suggestions {
+        top: 29%;
+        left: 15%;
+        z-index: 1000;
+    }
+    main section div.autocomplete-suggestion {
+        display: flex;
+        height: 45px;
+        width: 300px;
+        background-color: white;
+    }
+    main section div.autocomplete-suggestion:hover {
+        background-color: #AFBFCB;
+        cursor: pointer;
+    }
+}
+

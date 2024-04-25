@@ -1,0 +1,382 @@
+@import url('style.css');
+#weather-module {
+    height: 375px;
+}
+#weather-module h2,h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    font-weight:900;
+}
+#weather-module h2 {
+    padding: 12px;
+}
+#weather-module section {
+    margin: 0 2% 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;
+}
+#weather-module section img {
+    height: 100px;
+    width: 100px;
+}
+#weather-module section img.picto {
+    height: 50px;
+    width: 50px;
+}
+#rod,section#following-days #rod-B {
+    position: relative;
+    top: 20px;
+    height: 200px;
+    width: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+#rod-B {
+    top: 0;
+    height: 100px;
+}
+section #following-days, aside, main section:nth-child(2), #btn-nav-graph {
+    display: none;
+}
+#weather-module {
+    display: block;
+}
+main section:nth-child(2) {
+    display: none;
+    flex-direction: column;
+    height: 375px;
+}
+main section:nth-child(2) h3 {
+    font-size: 1.4em;
+}
+main section:nth-child(2) h4 {
+    color: white;
+    font-size: 1.3em;
+}
+main section:nth-child(2) ul {
+    list-style-type: none;
+}
+main section:nth-child(2) ul li {
+    color: white;
+    font-size: 1.2em;
+}
+#weather-module section :first-child, #weather-module section :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temperature-style {
+    font-size: 1.6em;
+    font-weight: 900;
+    text-shadow: 1px 1px 0px white;
+}
+.blue {
+    color: blue;
+}
+.red{
+    color:red;
+}
+
+#weather-module section :first-child div,#weather-module section :last-child div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#weather-module section :first-child div p ,#weather-module section :last-child div p {
+    color: #3D3D3D;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+#btn-nav{
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px; 
+}
+#btn-nav img,#btn-nav-graph img {
+    height: 50px;
+    width: 50px;
+}
+#btn-nav a:nth-child(1) img, #btn-nav-graph a:nth-child(1) img {
+    transform: rotateY(180deg);
+}
+
+#btn-nav-mobile {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn-nav-mobile div {
+    background-color:#2E72B2;
+    height: 110px;
+    width: 110px;
+    border-radius: 100px;
+}
+#btn-nav-mobile div:first-child , #btn-nav-mobile div:last-child {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+#btn-nav-mobile div:first-child {
+    background-image: url(../images/snow.png);
+}
+#btn-nav-mobile div:last-child {
+    background-image: url(../images/partiellementnuageuxjour.png);
+}
+
+@media screen and (min-width: 700px) {
+    main{
+        height: 100vh;
+    }
+    #btn-nav-mobile, #btn-nav {
+        display: none;
+    }
+    #weather-module {
+        height: 450px;
+        margin: 0 5% 2% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #weather-module section {
+        height: 200px;
+        width: 65%;
+    }
+    #rod {
+        top: 30px;
+        height: 130px;
+    }
+    section#following-days #rod-B {
+        top: 0;
+        height: 80px;
+    }
+    section#following-days {
+        width: 85%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 25px;
+    }
+    section#following-days div div {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section#following-days div div   {
+        font-size: 0.5em;
+        display: none;
+    }
+    #following-days div , #following-days div {
+        position: relative;
+    }
+
+    #following-days div div img {
+        height: 65px;
+        width: 65px;
+    }
+    #following-days h3 {
+        padding: 0;
+        margin: 0;
+    }
+    #following-days span {
+        font-size: 2.5em;
+        padding: 0;
+        margin: 0;
+    }
+    #weather-module section :first-child div p, #weather-module section :last-child div p {
+        font-size: 1em;
+    }
+    #weather-module section img.picto {
+        height: 30px;
+        width: 30px;
+    }
+    #weather-module .wind-bloc {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    /* Météo des neiges */
+    main section:nth-child(2) {
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    main section:nth-child(2) h3 {
+        margin: 5px;  
+    }
+    main section:nth-child(2) ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style-type: none;
+    }
+    main section:nth-child(2) ul li {
+        color: white;
+    }
+    #container-aside aside {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 5% 15% 5% 15%;
+        height: 25%;
+    }
+    body main aside img {
+        position: relative;
+        width: 85%;
+        height: 70%;
+        padding: 5px;
+    }
+    body main h4 {
+        color: white;
+        margin: 0;
+        padding: 5px 0 5px 0;
+    }
+    #container-aside aside:nth-child(1).viewNone,  #container-aside aside:nth-child(2).viewNone,  #container-aside aside:nth-child(3).viewNone {
+        display: none;
+
+    }
+    #btn-nav-graph {
+        position: absolute;
+        top: 90%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    aside canvas {
+        background-color: white;
+        height: 90%;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1100px){
+    main {
+        display:flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+    #btn-nav-graph  {
+        display: none;
+    }
+    #weather-module {
+        position: relative;
+        margin: 6% 10% 0 0%;
+        width: 60%;
+        height: 650px;
+    }
+    #weather-module h2 {
+        font-size: 1.4em;
+    }
+    #weather-module section:nth-child(2){
+        position: relative;
+        height: 100%;
+        width: 80%;
+        align-items: center;
+        margin: 0;
+    }
+    #weather-module section:nth-child(2) img {
+        height: 50px;
+        width: auto;
+    }
+    #weather-module section:nth-child(2) img.picto {
+        height: 60px;
+        width: 60px;
+    }
+    #weather-module section:nth-child(2) span {
+        font-size: 2.5em;
+    }
+    #rod {
+        top: 0;
+        height: 200px;
+    }
+    section#following-days h3 {
+        padding: 5px;
+        font-size: 1.3em ;
+    }
+    section#following-days.container-type-2 {
+        margin-bottom: 10px;
+    }
+    section#following-days.container-type-2 div {
+        height: 100%;
+        width: 100%;
+    }
+    section#following-days #rod-B {
+        top: 0;
+        height: 100px;
+    }
+    #weather-module section :first-child div, #weather-module section :last-child div {
+        height: 80%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    section#following-days.container-type-2 div img {
+       height: auto;
+       width: auto;
+    }
+    section#following-days.container-type-2 span {
+        
+        font-size: 3em;
+    }
+    main section:nth-child(2).container-type-1 {
+        position: relative;
+        width: 25%;
+        height: 45%;
+        top: 8.5%;
+        left: -2%;
+        margin: 0;
+    }
+    main section:nth-child(2).container-type-1 h3{
+        padding: 10px 0 10px 0;
+        background-image: url(../images/snow.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        font-size: 1.5em;
+    }
+    main section:nth-child(2).container-type-1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    main section:nth-child(2).container-type-1 ul {
+        font-size: 1.2em;
+    }
+    main section:nth-child(2).container-type-1 ul li {
+        padding: 1.5% 0 1.5% 0;
+    }
+    main section:nth-child(2).container-type-1 ul h4 {
+        margin-bottom: 5%;
+    }
+    #container-aside aside:nth-child(1), #container-aside aside:nth-child(2), #container-aside aside:nth-child(3) {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 30%;
+        margin: 0;
+    }
+    #container-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: -5%;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+
+  

@@ -1,0 +1,171 @@
+@import url('style.css');
+h2.title-type-1 {
+    display: none;  
+}
+main section div:nth-child(1) {
+    display: none;
+}
+main section.container-type-1 {
+    padding: 10px;
+    margin: 5px;
+}
+main form {
+    width: 100%;
+}
+main label {
+    font-size: 1.2em;
+    color: white;
+}
+main form input.input-type-1,main form select.input-type-1  {
+    width: 100%;
+    height: 60px;
+}
+main form input.input-type-1:nth-child(2) {
+    height: 200px;
+    text-align: left;
+    padding: 0;
+}
+main form option {
+    height: 100%;
+}
+main form button.button-type-1 {
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+
+main div#suggestions {
+    position: absolute;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 540px;
+    overflow: hidden;
+}
+main .autocomplete-suggestion {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 2% 0 2% 0;
+    width: 100% ;
+    background-color: white;
+    cursor: pointer;
+}
+@media screen and (min-width: 700px){
+    main form select.input-type-1  {
+        display: none;
+    }
+    h2.title-type-1 {
+        display: flex;
+        position: absolute;
+        top: 1%;
+        width: 50%;
+        height: 75px;
+        margin: 0 25% 0 25%;   
+    }
+    main section p {
+        color: white;
+        font-size: 1.1em;
+    }
+    #liste-mobile-view {
+        display: none;
+    }
+    main section div:nth-child(1) {
+        display: block;
+    }
+    main section div:nth-child(1) label {
+        font-size: 1.2em;
+    }
+    main section div:nth-child(1) input {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (min-width: 1100px){
+    header {
+        height: 25%;
+    }
+    header nav {
+        top: 25%;
+        left: 10%;
+
+    }
+    h2.title-type-1 {
+        top: 12%;
+        margin: 0 20% 0 30%;
+        font-size: 1.4em;
+    }
+    main section {
+        position: relative;
+        top: -4%;
+    }
+    main section.container-type-1 {
+        height: 90%;
+        margin: 0 5% 0 5%;
+        padding: 10px;
+        width: 90%;
+        height: 70%;
+    }
+    main form { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20px 1fr 100px;
+        height: 100%;
+        margin: 0;
+    }
+    main form p {
+        grid-column: 1/3;
+        grid-row:1/2;
+        margin: 0;
+        font-size: 1.3em;
+    }
+    main form label {
+        font-size: 1.3em;
+    } 
+    main form div.container-type-2 {
+        margin: 10px;
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+    main form div:nth-child(4) {
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    main section div:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    main form button.button-type-1 {
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        top: -100%;
+    }
+    main div#suggestions {
+        position: absolute;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        left: 55%;
+        top: 650px;
+        width: 400px;
+        height: 500px;
+        margin: 0;
+    }
+    main .autocomplete-suggestion {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        height: 35px;
+        width: 350px;
+        background-color: white;
+        cursor: pointer;
+        padding: 0;
+    }
+    main .autocomplete-suggestion:hover {
+        background-color: gainsboro;
+    }
+}

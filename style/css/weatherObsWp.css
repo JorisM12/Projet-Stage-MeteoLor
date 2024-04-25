@@ -1,0 +1,362 @@
+@import url('style.css');
+
+header #log-out a {
+    background-color: #AFBFCB;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+main #mobile-view-choice {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+}
+main #mobile-view-choice a{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;  
+}
+main #mobile-view-choice a.button-type-2{
+    opacity: 0.2;
+}
+main #mobile-view-choice div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main #mobile-view-choice p{
+    padding: 1%;
+}
+
+main #mobile-view-choice div a{
+    font-weight: bold;
+}
+main section .leaflet-marker-icon {
+    filter: drop-shadow(7px 7px 7px #0101017b);
+    -webkit-filter: drop-shadow(7px 7px 7px #00000081);
+}
+
+main section div#mapJS p {
+    margin: 0;
+}
+main section div#mapJS .head-obs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main section div#mapJS .circle-hour {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+main section div#mapJS .circle-hour.green {
+    background-color: rgb(1, 217, 1);
+}
+main section div#mapJS .circle-hour.orange {
+    background-color: orange;
+}
+main section div#mapJS .circle-hour.red {
+    background-color: red;
+}
+
+main section .img-obs-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1100px){
+    body {
+        padding: 0;
+    }
+    main {
+        position: relative;
+    }
+    main section#mobile-view-choice{
+        display: none;
+    }
+    main section#desktop-view-choice {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+    main section:first-child {
+        position: relative;
+        height: 700px;
+        width: 35%;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    main section:first-child form {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:first-child h3 {
+        text-align: center;
+    }
+    main section:last-child {
+        position: relative;
+        top: 5%;
+        height: 800px;
+        width: 100%;
+    }
+    main section#sectionMapJS {
+        position: relative;
+        height: 800px;
+        width: 100%;
+        margin: 0 25% 0 25%;
+    }
+    main section:last-child div#mapJS {
+        height: 800px;
+        width: 50%;
+    }
+    main section form .input-type-1 {
+        width: 90%;
+        margin-bottom: 4%;
+        background-color: rgb(244, 244, 244);
+    }
+    main section label,.input-type-1 {
+        margin-left: 2%;
+    }
+    main section form .input-type-1:nth-child(2) {
+        height: 100px;
+    }
+    main section form .button-type-1 {
+        position: relative;
+        width: 50%;
+        height: 50px;
+        margin: 0 25% 0 25%;
+        top: 15%;
+    }
+    main section .leaflet-marker-icon {
+        filter: drop-shadow(7px 7px 7px #0101017b);
+        -webkit-filter: drop-shadow(7px 7px 7px #00000081);
+    }
+    main section:last-child a.button-type-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 70%;
+        margin-top: 5%;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;  
+        cursor: pointer; 
+        opacity: 0.3;
+    }
+    main section #delete-obs {
+        position: relative;
+        text-align: center;
+        width: 75%;
+        height: 50px;
+        margin: 5% 12.5% 0 12.5%;
+        bottom: 15px;
+        left: 0;
+        background-color: rgb(249, 93, 93);
+        opacity: 1;
+    }
+    main section div#mapJS .title-card {
+       text-align: center;
+    }
+    main section div#mapJS .img-card {
+        height: 80px;
+        width: auto;
+    }
+    main section div#hours-circles{
+        position: relative;
+        height: 50px;
+        width: 400px;
+        left: 17%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main section div.circle-legend{
+        position: relative;
+        height: 25px;
+        width: 25px;
+        left: 15px;
+        border-radius: 50px;
+        background-color: rgb(1, 217, 1);;
+    }
+    main section div.circle-legend:nth-child(3){
+        background-color: orange;
+    }
+    main section div.circle-legend:nth-child(5){
+        background-color: red;
+    }
+    footer {
+        position: relative;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: -20px;
+    }
+    footer a {
+        position: relative;
+        right: 20px;
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body {
+        padding: 0;
+    }
+    main {
+        position: relative;
+    }
+    main section#mobile-view-choice{
+        display: none;
+    }
+    main section#desktop-view-choice {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+    main section:first-child {
+        position: relative;
+        height: 700px;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    main section:first-child form {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:first-child h3 {
+        text-align: center;
+    }
+    main section:last-child {
+        position: relative;
+        top: 5%;
+        height: 800px;
+        width: 100%;
+    }
+    main section#sectionMapJS {
+        position: relative;
+        height: 800px;
+        width: 100%;
+        margin: 0 10% 0 10%;
+    }
+    main section:last-child div#mapJS {
+        height: 800px;
+        width: 80%;
+    }
+    main section form .input-type-1 {
+        width: 90%;
+        margin-bottom: 4%;
+        background-color: rgb(244, 244, 244);
+    }
+    main section label,.input-type-1 {
+        margin-left: 2%;
+    }
+    main section form .input-type-1:nth-child(2) {
+        height: 100px;
+    }
+    main section form .button-type-1 {
+        position: relative;
+        width: 50%;
+        height: 50px;
+        margin: 0 25% 0 25%;
+        top: 15%;
+    }
+    main section .leaflet-marker-icon {
+        filter: drop-shadow(7px 7px 7px #0101017b);
+        -webkit-filter: drop-shadow(7px 7px 7px #00000081);
+    }
+    main section:last-child a.button-type-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 70%;
+        margin-top: 5%;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;  
+        cursor: pointer; 
+        opacity: 0.3;
+    }
+    main section #delete-obs {
+        position: relative;
+        text-align: center;
+        width: 75%;
+        height: 50px;
+        margin: 5% 12.5% 0 12.5%;
+        bottom: 15px;
+        left: 0;
+        background-color: rgb(249, 93, 93);
+        opacity: 1;
+    }
+    main section div#mapJS .title-card {
+       text-align: center;
+    }
+    main section div#mapJS .img-card {
+        height: 80px;
+        width: auto;
+    }
+    main section div#hours-circles{
+        position: relative;
+        height: 50px;
+        width: 400px;
+        left: 17%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main section div.circle-legend{
+        position: relative;
+        height: 25px;
+        width: 25px;
+        left: 15px;
+        border-radius: 50px;
+        background-color: rgb(1, 217, 1);;
+    }
+    main section div.circle-legend:nth-child(3){
+        background-color: orange;
+    }
+    main section div.circle-legend:nth-child(5){
+        background-color: red;
+    }
+    footer {
+        position: relative;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: -20px;
+    }
+    footer a {
+        position: relative;
+        right: 20px;
+        font-size: 0.6em;
+    }
+    main section div#hours-circles{
+        position: relative;
+        height: 50px;
+        width: 400px;
+        left: 15%;
+    }
+}
+

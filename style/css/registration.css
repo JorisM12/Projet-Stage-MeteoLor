@@ -1,0 +1,146 @@
+@import url('style.css');
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+h2.title-type-1 {
+    width: 80%; 
+    font-size: 1.2em;
+}
+#header-mobile-view img {
+    height: 100px;
+    width: 100px;
+}
+#bloc-error {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2px 0 2px;
+    height: 40px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    top: 98%;
+    border: 1px solid white;
+}
+#bloc-error p {
+    margin: 0;
+    color: red;
+    font-weight: 500;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form label {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+main form label.text-type-1,main div:last-child a  {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;  
+}
+main form input.input-type-1 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+main form button.button-type-1 {
+    width: 50%;
+    margin: 5% 25% 0 25%;
+    font-size: 1.2em; 
+}
+main form a.button-type-2 {
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    margin: 5% 30% 0 30%;
+    font-size: 1.2em; 
+}
+
+form input#last-input {
+    margin-top: 90px;
+}
+
+
+main form img {
+    position: static;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 150px;
+}
+footer {
+    display: none;
+}
+
+@media screen and (min-width: 450px){
+    main form #last-input {
+        position: relative;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+    }
+    #bloc-error {
+        top: 95%;
+        width: 550px;
+        left: 32%;
+    }
+    h2.title-type-1 {
+        position: relative;
+        width: 50%; 
+        height: 80px;
+        font-size: 1.4em;
+    }
+    main form {
+        width: 70%;
+        margin-left: 19%;
+    }
+    main div p.text-type-1 {
+        font-size: 1.5em;
+    }
+    main form label {
+        font-size: 1.3em;
+    }
+    main form input.input-type-1 {
+        width: 80%;
+    }
+    main form button.button-type-1 {
+        width: 40%;
+        margin: 5% 30% 0 20%;
+        font-size: 1.5em; 
+    }
+    main form a.button-type-2 {
+        position: relative;
+        height: 60px;
+        width: 30%;
+        margin: 5% 35% 0 25%;
+    }
+    select.input-type-1 {
+        width: 80%;
+    }
+    main form img {
+        position: static;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 150px;
+
+    }
+}

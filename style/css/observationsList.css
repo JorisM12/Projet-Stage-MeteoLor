@@ -1,0 +1,16 @@
+@import url('userList.css');
+
+main section table thead th:nth-child(1),main section table thead th:nth-child(2),main section table thead th:nth-child(3),main section table thead th:nth-child(4),main section table thead th:nth-child(5),main section table thead th:nth-child(6),main section table thead th:nth-child(7),main section table thead th:nth-child(8),main section table thead th:nth-child(9),main section table tbody td:nth-child(1),main section table tbody td:nth-child(2),main section table tbody td:nth-child(3),main section table tbody td:nth-child(4),main section table tbody td:nth-child(5),main section table tbody td:nth-child(6),main section table tbody td:nth-child(7),main section table tbody td:nth-child(8),main section table tbody td:nth-child(9){
+    display: table-cell;
+}
+main section table thead th:nth-child(8) {
+    border-top-right-radius:0;
+    background-color: white;
+}
+main section table thead th:nth-child(7) {
+    border-top-right-radius: 10px;
+}
+
+main section {
+    top: 200px;
+}
